@@ -1,0 +1,9 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: frontend-ingress
+  namespace: frontend
+spec:
+  backend:
+    serviceName: myapp-lb
+    servicePort: 5000
