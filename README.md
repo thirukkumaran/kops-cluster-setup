@@ -48,4 +48,4 @@ kubectl apply -f frontend-ingress.yml
 2. Point frontend domain to frontend ALB
 
 
-## Access the link with https://frotend-domain
+## Access frontend with https://frontend-domain
