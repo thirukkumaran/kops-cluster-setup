@@ -22,9 +22,9 @@ spec:
         - containerPort: 5000
         env:
         - name: REDIS_HOST
-          value: "192.168.99.100"
+          value: <backend domain>
         - name: REDIS_PORT
-          value: "30002"
+          value: 80
         resources:
           requests:
             memory: "64Mi"

@@ -3,6 +3,9 @@ kind: Ingress
 metadata:
   name: frontend-ingress
   namespace: frontend
+  annotations:
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/scheme: internet-facing
 spec:
   backend:
     serviceName: myapp-lb

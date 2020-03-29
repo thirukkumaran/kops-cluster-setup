@@ -4,7 +4,7 @@ metadata:
   name: redis-lb
   namespace: backend
 spec:
-  type: ClusterIP
+  type: NodePort
   ports:
   - port: 6379
     protocol: TCP

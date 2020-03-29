@@ -3,6 +3,9 @@ kind: Ingress
 metadata:
   name: backend-ingress
   namespace: backend
+  annotations:
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/scheme: internal
 spec:
   backend:
     serviceName: redis-lb

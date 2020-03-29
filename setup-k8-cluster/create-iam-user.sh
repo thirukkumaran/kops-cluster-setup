@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 #kops IAM user and permissions
 
 aws iam create-group --group-name kops
